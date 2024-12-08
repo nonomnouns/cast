@@ -1,0 +1,57 @@
+{
+    "posting": {
+        "cast_interval": {
+            "min": 1800, 
+            "max": 7200   
+        },
+        "max_daily_casts": 32,  
+        "channels": {
+            "builders": "channel_xyz",
+            "defi": "channel_abc",
+            "dao": "channel_dao",
+            "memes": "channel_memes"
+        }
+    },
+    "monitoring": {
+        "engagement_threshold": {
+            "likes": 10,
+            "recasts": 3,
+            "replies": 2
+        },
+        "learning_rate": 0.7,
+        "analysis_interval": 3600,  
+        "retrain_threshold": 50     
+    },
+    "model_tuning": {
+        "batch_size": 4,
+        "epoch_count": 20,
+        "learning_rate": 0.001,
+        "min_training_samples": 50,
+        "validation_split": 0.2
+    },
+    "farcaster": {
+        "channels_to_monitor": [
+            "developers",
+            "builders",
+            "lotto",
+            "base",
+            "nouns",
+            "memes"
+        ],
+        "auto_recast": true,
+        "auto_reply": false,
+        "engagement_tracking": {
+            "window_size": 3600,    
+            "min_likes": 5,
+            "min_recasts": 2
+        }
+    },
+    "optimization": {
+        "peak_hours_weight": 1.5,   
+        "engagement_decay": 0.95,   
+        "personality_rotation": {
+            "probability": 0.2,     
+            "min_interval": 43200   
+        }
+    }
+}

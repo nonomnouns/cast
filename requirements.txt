@@ -1,0 +1,4 @@
+farcaster
+google-generativeai
+python-dotenv
+supabase
